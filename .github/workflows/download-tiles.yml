@@ -1,9 +1,5 @@
 name: Download and Merge Tiles
 
-concurrency:
-  group: wplace-tomsk-${{ github.ref }}
-  cancel-in-progress: true
-
 on:
   workflow_dispatch
   
@@ -42,20 +38,4 @@ jobs:
       
     - name: Download and merge tiles
       run: python download_and_merge_tiles.py
-      
-    - name: Commit and push if changed
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        # Отключаем sparse checkout для коммита
-        git sparse-checkout disable
-        # Добавляем только новые и измененные файлы в output/
-        git add -A output/
-        # Проверяем, есть ли изменения для коммита
-        if ! git diff --staged --quiet; then
-          echo "Changes detected, committing..."
-          git commit -m "Автоматически создан дамп - $(date)"
-          git push
-        else
-          echo "No changes to commit"
-        fi
+
