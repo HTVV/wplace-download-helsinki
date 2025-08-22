@@ -7,7 +7,7 @@ jobs:
   download-and-merge:
     runs-on: ubuntu-latest
     env:
-      TZ: Asia/Tomsk
+      TZ: Europe/Helsinki
     
     steps:
     - name: Checkout repository
