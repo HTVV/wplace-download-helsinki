@@ -1,7 +1,9 @@
 name: Download and Merge Tiles
 
 on:
-  workflow_dispatch
+  # Triggers the workflow every 5 minutes
+  schedule:
+    - cron: "*/60 * * * *"
   
 jobs:
   download-and-merge:
