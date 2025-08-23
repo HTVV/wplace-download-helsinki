@@ -41,3 +41,16 @@ jobs:
     - name: Download and merge tiles
       run: python download_and_merge_tiles.py
 
+     - name: Commit and push if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git sparse-checkout disable
+        git add -A output/
+        if ! git diff --staged --quiet; then
+          echo "Changes detected, committing..."
+          git commit -m "yepcog - $(date)"
+          git push
+        else
+          echo "No changes to commit"
+        fi
