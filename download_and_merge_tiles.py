@@ -53,7 +53,7 @@ ORIGINAL_WIDTH = TILE_SIZE * GRID_COLS   # 3000
 ORIGINAL_HEIGHT = TILE_SIZE * GRID_ROWS  # 2000
 
 # Scaling (allow override via environment variable, default 2x to avoid huge images)
-SCALE_FACTOR = int(os.getenv("SCALE_FACTOR", "2"))
+SCALE_FACTOR = int(os.getenv("SCALE_FACTOR", "1"))
 FINAL_WIDTH = ORIGINAL_WIDTH * SCALE_FACTOR
 FINAL_HEIGHT = ORIGINAL_HEIGHT * SCALE_FACTOR
 
@@ -200,4 +200,5 @@ def main():
 
 if __name__ == "__main__":
     success = main()
+
     exit(0 if success else 1)
