@@ -40,7 +40,7 @@ jobs:
     - name: Download and merge tiles
       run: python download_and_merge_tiles.py
 
-     - name: Commit and push if changed
+    - name: Commit and push if changed
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
