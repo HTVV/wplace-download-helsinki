@@ -22,6 +22,13 @@ logger = logging.getLogger(__name__)
 # Row 2 (bottom): left, center, right
 TILE_URLS = [
     [
+        "https://backend.wplace.live/files/s0/tiles/1163/590.png",
+        "https://backend.wplace.live/files/s0/tiles/1164/590.png",
+        "https://backend.wplace.live/files/s0/tiles/1165/590.png",
+        "https://backend.wplace.live/files/s0/tiles/1166/590.png",
+        "https://backend.wplace.live/files/s0/tiles/1167/590.png",
+    ],
+    [
         "https://backend.wplace.live/files/s0/tiles/1163/591.png",
         "https://backend.wplace.live/files/s0/tiles/1164/591.png",
         "https://backend.wplace.live/files/s0/tiles/1165/591.png",
@@ -202,3 +209,4 @@ if __name__ == "__main__":
     success = main()
 
     exit(0 if success else 1)
+
