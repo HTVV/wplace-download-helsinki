@@ -2,7 +2,7 @@ name: Download and Merge Tiles
 
 on:
   schedule:
-    - cron: "* */6 * * *"
+    - cron: "7 */6 * * *"
   workflow_dispatch:
 jobs:
   download-and-merge:
