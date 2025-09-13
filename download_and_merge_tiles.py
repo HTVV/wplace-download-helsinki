@@ -22,6 +22,7 @@ logger = logging.getLogger(__name__)
 # Row 2 (bottom): left, center, right
 TILE_URLS = [
     [
+        "https://backend.wplace.live/files/s0/tiles/1162/590.png",
         "https://backend.wplace.live/files/s0/tiles/1163/590.png",
         "https://backend.wplace.live/files/s0/tiles/1164/590.png",
         "https://backend.wplace.live/files/s0/tiles/1165/590.png",
@@ -29,6 +30,7 @@ TILE_URLS = [
         "https://backend.wplace.live/files/s0/tiles/1167/590.png",
     ],
     [
+        "https://backend.wplace.live/files/s0/tiles/1162/591.png",
         "https://backend.wplace.live/files/s0/tiles/1163/591.png",
         "https://backend.wplace.live/files/s0/tiles/1164/591.png",
         "https://backend.wplace.live/files/s0/tiles/1165/591.png",
@@ -36,6 +38,7 @@ TILE_URLS = [
         "https://backend.wplace.live/files/s0/tiles/1167/591.png",
     ],
     [
+        "https://backend.wplace.live/files/s0/tiles/1162/592.png",
         "https://backend.wplace.live/files/s0/tiles/1163/592.png",
         "https://backend.wplace.live/files/s0/tiles/1164/592.png",
         "https://backend.wplace.live/files/s0/tiles/1165/592.png",
@@ -43,11 +46,16 @@ TILE_URLS = [
         "https://backend.wplace.live/files/s0/tiles/1167/592.png",
     ],
     [
+        "https://backend.wplace.live/files/s0/tiles/1162/593.png",
         "https://backend.wplace.live/files/s0/tiles/1163/593.png",
         "https://backend.wplace.live/files/s0/tiles/1164/593.png",
         "https://backend.wplace.live/files/s0/tiles/1165/593.png",
         "https://backend.wplace.live/files/s0/tiles/1166/593.png",
         "https://backend.wplace.live/files/s0/tiles/1167/593.png",
+    ],
+    [
+      "https://backend.wplace.live/files/s0/tiles/1162/594.png",  
+        "https://backend.wplace.live/files/s0/tiles/1163/594.png",
     ],
 ]
 
@@ -209,4 +217,5 @@ if __name__ == "__main__":
     success = main()
 
     exit(0 if success else 1)
+
 
