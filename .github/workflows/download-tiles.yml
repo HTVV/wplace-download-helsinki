@@ -3,7 +3,7 @@ name: Download and Merge Tiles
 on:
   schedule:
     - cron: "* */6 * * *"
-  
+  workflow_dispatch:
 jobs:
   download-and-merge:
     runs-on: ubuntu-latest
