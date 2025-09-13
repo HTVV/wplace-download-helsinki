@@ -56,6 +56,10 @@ TILE_URLS = [
     [
       "https://backend.wplace.live/files/s0/tiles/1162/594.png",  
         "https://backend.wplace.live/files/s0/tiles/1163/594.png",
+        "https://backend.wplace.live/files/s0/tiles/1164/594.png",
+        "https://backend.wplace.live/files/s0/tiles/1165/594.png",
+        "https://backend.wplace.live/files/s0/tiles/1166/594.png",
+        "https://backend.wplace.live/files/s0/tiles/1167/594.png",
     ],
 ]
 
@@ -217,5 +221,6 @@ if __name__ == "__main__":
     success = main()
 
     exit(0 if success else 1)
+
 
 
