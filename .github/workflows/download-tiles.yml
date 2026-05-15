@@ -1,4 +1,4 @@
-name: Download and Merge Tiles
+/*name: Download and Merge Tiles
 
 on:
   schedule:
@@ -52,4 +52,4 @@ jobs:
           git push
         else
           echo "No changes to commit"
-        fi
+        fi*/
